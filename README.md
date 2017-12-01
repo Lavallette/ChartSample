@@ -1,3 +1,1 @@
-# ChartsCandleStickSample
-# ChartsCandleStickSample
 # ChartSample
