@@ -10,3 +10,5 @@ It demonstates
   
   is was built to try to implement manual scrolling/paning syncing.
   
+  See question https://github.com/danielgindi/Charts/issues/3063 .
+  
