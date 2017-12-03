@@ -1,7 +1,7 @@
 # ChartSample
 A simple chart using the great Chart library, https://github.com/danielgindi/Charts.
 
-It demonstates
+It demonstrates
 
   - 2 charts
   - scrolling
