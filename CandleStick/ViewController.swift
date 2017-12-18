@@ -252,8 +252,7 @@ class ViewController: NSViewController, ChartViewDelegate {
         }
     }
     
-    func chartTranslated(chartView: ChartViewBase, dX: CGFloat, dY: CGFloat) {
-        print("chartTranslated")
+    func chartTranslated(_ chartView: ChartViewBase, dX: CGFloat, dY: CGFloat) {
      
         if  chartView == combinedChartView {
             let currentMatrix = chartView.viewPortHandler.touchMatrix
@@ -262,19 +261,6 @@ class ViewController: NSViewController, ChartViewDelegate {
             let currentMatrix = chartView.viewPortHandler.touchMatrix
             combinedChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: combinedChartView, invalidate: true)
         }
-        
-//        if  chartView == combinedChartView {
-//            let newMatrix = chartView.viewPortHandler.touchMatrix
-//            let oldMatrix = lineChartView.viewPortHandler.touchMatrix
-//            let currentMatrix = CGAffineTransformMake(oldMatrix.a, oldMatrix.b, oldMatrix.c, oldMatrix.d, newMatrix.tx, oldMatrix.ty)
-//            lineChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: lineChartView, invalidate: true)
-//        }else {
-//            let newMatrix = chartView.viewPortHandler.touchMatrix
-//            let oldMatrix = combinedChartView.viewPortHandler.touchMatrix
-//            let currentMatrix = CGAffineTransformMake(oldMatrix.a, oldMatrix.b, oldMatrix.c, oldMatrix.d, newMatrix.tx, oldMatrix.ty)
-//            combinedChartView.viewPortHandler.refresh(newMatrix: currentMatrix, chart: combinedChartView, invalidate: true)
-//        }
-//    }
     }
     
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
